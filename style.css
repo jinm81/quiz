@@ -1,19 +1,24 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:whitesmoke;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
 }
 
 .container {
-    height: 330px;
-    width: 1000px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    background: skyblue;
-    padding: 20px;
-    border: 1px solid black;
-    box-shadow: 0 0 8px 3px #fff;
+    width:800px;
+    max-width: 80%;
+    max-height: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;  
+    justify-content: center;
 }
 
 .title {
@@ -21,7 +26,7 @@ body {
     text-align: center;
     font-size: 36px;
     text-transform: uppercase;
-    color:orange;
+    color:navy;
 }
 
 .question {
