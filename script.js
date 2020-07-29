@@ -39,9 +39,22 @@ var questions = [{
 	"answer": "1"
 }];
 
-
-
-
+var timeLeft = 60;
+function startTime() {
+    timerInterval = setInterval(function() {
+		timeLeft--;
+		console.log(timeLeft)
+        timeEl.textContent = timeLeft + " sec Remaining";
+        if(timeLeft < 0) {
+            clearInterval(timerInterval);
+            endMessage();
+        }
+     }, 1000);
+}
+startTime();
+var timeEl = document.getElementById("time");
+timeEl.textContent = timeLeft + "sec Remaining";
+timeEl.innerHTML = timeLeft;
 
 var currentQuestion = 0;
 var score = 0;
