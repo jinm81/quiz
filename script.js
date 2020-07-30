@@ -10,7 +10,7 @@ var timeEl = document.getElementById("time");
 
 // global var
 
-var timeLeft = 10;
+var timeLeft = 30;
 var currentQuestion = 0;
 var score = 0;
 
